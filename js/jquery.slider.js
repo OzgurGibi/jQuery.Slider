@@ -103,7 +103,7 @@
             }
             else
             {
-                $.error("Method " + option + " does not exist on jQuery.tooltip");
+                $.error("Method " + option + " does not exist on jQuery.Slider");
             }
         });
     }
