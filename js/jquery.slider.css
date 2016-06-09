@@ -1,0 +1,44 @@
+.tab-content, .tab-content .tab-pane {
+    background-color: yellow;
+    width: 650px;
+    height: 330px;
+}
+
+    .tab-content .tab-pane {
+        position: absolute;
+        z-index: 1;
+        left: 650px;
+    }
+
+.tab-content {
+    position: relative;
+    overflow: hidden;
+}
+
+    .tab-content .tab-pane:nth-child(1) {
+        background: orange;
+    }
+
+    .tab-content .tab-pane:nth-child(2) {
+        background: lightblue;
+    }
+
+    .tab-content .tab-pane:nth-child(3) {
+        background: pink;
+    }
+
+    .tab-content .tab-pane:nth-child(4) {
+        background: lightgreen;
+    }
+	
+	.tab-content .tab-pane:nth-child(5) {
+        background: green;
+    }
+
+    .tab-content .tab-pane:nth-child(6) {
+        background: blue;
+    }
+
+    .tab-content .tab-pane:nth-child(7) {
+        background: purple;
+    }
