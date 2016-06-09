@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Example</title>
+    <link rel="stylesheet" href="js/bootstrap.min.css" />
+    <link rel="stylesheet" href="js/jquery-ui.min.css" />
+    <link rel="stylesheet" href="js/jquery.slider.css" />
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slider.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.bootstrap.wizard.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="span12">
+            <section id="wizard">
+                <div class="page-header">
+                    <h1>Basic Wizard</h1>
+                </div>
+
+                <div id="rootwizard">
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="container">
+                                <ul>
+                                    <li><a href="#tab0" data-toggle="tab">First</a></li>
+                                    <li><a href="#tab1" data-toggle="tab">First</a></li>
+                                    <li><a href="#tab2" data-toggle="tab">Second</a></li>
+                                    <li><a href="#tab3" data-toggle="tab">Third</a></li>
+                                    <li><a href="#tab4" data-toggle="tab">Forth</a></li>
+                                    <li><a href="#tab5" data-toggle="tab">Fifth</a></li>
+                                    <li><a href="#tab6" data-toggle="tab">Sixth</a></li>
+                                    <li><a href="#tab7" data-toggle="tab">Seventh</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane" id="tab0">
+                            0
+                        </div>
+                        <div class="tab-pane" id="tab1">
+                            1
+                        </div>
+                        <div class="tab-pane" id="tab2">
+                            2
+                        </div>
+                        <div class="tab-pane" id="tab3">
+                            3
+                        </div>
+                        <div class="tab-pane" id="tab4">
+                            4
+                        </div>
+                        <div class="tab-pane" id="tab5">
+                            5
+                        </div>
+                        <div class="tab-pane" id="tab6">
+                            6
+                        </div>
+                        <div class="tab-pane" id="tab7">
+                            7
+                        </div>
+                    </div>
+                    <ul class="pager wizard">
+                        <li class="previous"><a href="#" id="previous">Previous</a></li>
+                        <li class="next"><a href="#" id="next">Next</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script>
+$(function ()
+{
+    $("#rootwizard").Slider();
+    //$(".tab-pane").show();
+
+    $("#previous").click(function ()
+    {
+        $("#rootwizard").Slider("Prev");
+    });
+
+    $("#next").click(function ()
+    {
+        $("#rootwizard").Slider("Next");
+    });
+});
+    </script>
+</body>
+</html>
