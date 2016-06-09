@@ -28,7 +28,7 @@
                         var href = $(this).attr("href");
                         var currentTab = $(".tab-content " + href + ".tab-pane");
 
-						self.Slider("GoTo", currentTab.index());
+			self.Slider("GoTo", currentTab.index());
 
                         e.preventDefault();
                     });
@@ -64,7 +64,7 @@
                             });
 
                         //self.attr("current", tabs.index(currentTab));
-						self.attr("current", index);
+			self.attr("current", index);
                     }
                 },
                 Prev: function ()
