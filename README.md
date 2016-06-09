@@ -28,7 +28,7 @@ Initialize with:
 ```javascript
 $(function ()
 {
-    $("#rootwizard").Slider();
+    $("#slider1").Slider();
 });
 ```
 
@@ -37,12 +37,12 @@ Other methods:
 ```javascript
 $("#previous").click(function ()
 {
-  $("#rootwizard").Slider("Prev");
+  $("#slider1").Slider("Prev");
 });
 
 $("#next").click(function ()
 {
-  $("#rootwizard").Slider("Next");
+  $("#slider1").Slider("Next");
 });
 ```
 
