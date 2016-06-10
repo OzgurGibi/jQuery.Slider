@@ -10,7 +10,7 @@ Add a link to the css and js file in your `<head>`:
 <link rel="stylesheet" href="js/jquery.slider.css" />
 <script src="js/jquery.slider.js"></script>
 
-<!-- And and add a div as following -->
+<!-- And add a div as following -->
 
   <div id="slider1">
     <div class="tab-content">
